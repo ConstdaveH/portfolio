@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>My Personal Portfolio</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">My Portfolio</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="#home"onclick="toggleMenu();" >Home</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                <li><a href="#skills"onclick="toggleMenu();" >Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            </ul>
+        </header>
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2>Hello, I'm<br><span>David Hegedus.</span></h2>
+                <h3>Enthusiastic and fast-learning Software Developer.</h3>
+                <a href="#about" class="btn">About Me</a>
+                <!img src="Pictures/Me.png" class="floatRight">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+                <div class="contentBx w50">
+                    <h3>I'm a Entry Level Software Developer.</h3>
+                    <p>Enthusiastic and fast-learning professional looking for the opportunity as an 
+                        Entry Level Software Developer. I have a strong passion for 
+                        programming as well as learning new skills. I am very eager 
+                        to enter the software development career path and follow my 
+                        passion for programming and development.
+                    </p>
+                </div>
+                <div class="w50">
+                    <img src="Pictures/2.png" style="border-radius: 150px;">
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="heading white">
+                <h2>Skills</h2>
+                <p>Skills I'm proficient in.</p>          
+            </div>
+            <div class="content">
+                <div class="skillsBx">
+                    <img src="Icons/html.png">
+                    <h2>HTML</h2>
+                    <p>Experience with using Hyper Text Markup Language to build the structure of a webpage and its content.</p>
+                </div>
+                <div class="skillsBx">
+                    <img src="Icons/css.png">
+                    <h2>CSS</h2>
+                    <p>Experience with using Cascading Style Sheets to add styles to web pages.</p>
+                </div>
+                <div class="skillsBx">
+                    <img src="Icons/javascript.png">
+                    <h2>JavaScript</h2>
+                    <p>Experience with using JavaScript to create small scale applications and to add additional functionality to web pages.</p>
+                </div>
+                <div class="skillsBx">
+                    <img src="Icons/browser.png">
+                    <h2>C#</h2>
+                    <p>Experience in development of "Object-Oriented Programming" Windows Forms Applications, and ASP.NET MVC web applications</p>
+                </div>
+                <div class="skillsBx">
+                    <img src="Icons/sql-server.png">
+                    <h2>SQL Server</h2>
+                    <p>Experience in creating databases, tables, stored procedures and writing queries.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="heading">
+                <h2>Projects</h2>
+                <p>Below are some projects I have created. Please click on the pictures for more info!</p>          
+            </div>
+            <div class="content">
+                <div class="projectsBx">
+                    <a href="https://siasky.net/CADDquG9SaOrR68wsxEa7NkA1zRWyjByy6F7QvjDOKK6kA/" target="_blank">
+                    <img src="Pictures/GitSearchScreenshot.png"></a> 
+                </div>
+                <div class="projectsBx">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="Pictures/RestaurantReviewScreenshot.png"> <! add screenshot of project here>                                
+                          </div>
+                          <div class="flip-box-back">
+                            <h2>Restaurant Review Web Application</h2><br>
+                            <p>Created and developed CRUD intranet web application that allows users to search for a specific restaurant, access the restaurant’s information and check the rating, as well as to leave a review, using C#, MVC, Entity Framework, LINQ, Bootstrap and SQL Server.
+                                Implemented View Model class that allowed to manipulate with data.
+                                Utilized Entity Framework’s code first approach to create database and store information.
+                                Applied entry validation functionality.
+                                Trouble-shot and fixed bugs with the help of unit test project.
+                            Used HTML Helpers to render Html content that helped in the rapid development of a view. Link coming soon.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="heading">
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="heading white">
+                <h2>Contact Me</h2>
+                <p>If you would like to get in contact with me, you may give me a call or email me anytime!</p>          
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                                <div class="text">
+                                    <h3>Phone</h3>
+                                    <p>(215)620-5534</p>
+                                </div>                            
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p>csdavidh@gmail.com</p>
+                                </div>                            
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                                <div class="text">
+                                    <h3>LinkedIn</h3>
+                                    <p>www.linkedin.com/in/david-hegedus-75b800224</p>
+                                </div>                            
+                        </div>
+                    </div>                  
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h3>Message Me</h3>
+                        <input type="text" name="" placeholder="Full Name">
+                        <input type="email" name="" placeholder="Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script>
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            function toggleMenu(){
+                var toggle = document.querySelector('.toggle');
+                var menu = document.querySelector('.menu')
+                toggle.classList.toggle('active')
+                menu.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>
